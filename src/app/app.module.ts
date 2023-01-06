@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
+  {path:'', component: HomepageComponent},
   {path:'homepage', component: HomepageComponent},
   {path:'menu',     component: MenuComponent},
   {path:'location', component: LocationComponent},
