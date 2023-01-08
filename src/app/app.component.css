@@ -129,6 +129,9 @@
 .p-3{
    padding-bottom: 0! important;
 }
+.show-mobile{
+   display: none;
+}
 
 
 /* reponsive mobile < 740px */
@@ -139,18 +142,18 @@
    .form-control{
       display: none;
    }
-   .fa-magnifying-glass{
-      display: none;
-   }
    .navone{
       display: none;
+   }
+   .fa-cart-shopping{
+      display: block;
    }
    .navbar-toggler:focus-visible{
       border: none;
       outline: none;
    }
    .container-fluid.tog{
-      justify-content: flex-start !important;
+      justify-content: space-between !important;
    }
    .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
       font-size: 9px;
@@ -198,11 +201,15 @@
 
 /* reponsive taplet  >= 740px and width < 1024px */
 @media only screen and (min-width : 46.1875em) and (max-width : 63.9375em){
+   .show-mobile{
+      display: block;
+      text-decoration: none;
+   }
    .navone{
       display: none;
    }
    .container-fluid.tog{
-      justify-content: flex-start !important;
+      justify-content: space-between !important;
    }
    .navbar-collapse.menu.collapse.show .navbar-nav .nav-item{
       font-size: 12px;
